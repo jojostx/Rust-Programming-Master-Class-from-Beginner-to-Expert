@@ -1,35 +1,10 @@
 [package]
-name = "rust-tutorial"
+name = "rust_tutorial"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 
 [[bin]]
-name = "mod"
-path = "8 - Rust Modules/3 - Cargo tools to Visualize Module Hierarchy/method 2/order/mod.rs"
-
-[[bin]]
-name = "category"
-path = "8 - Rust Modules/3 - Cargo tools to Visualize Module Hierarchy/method 2/product/category.rs"
-
-[[bin]]
 name = "lib"
-path = "8 - Rust Modules/3 - Cargo tools to Visualize Module Hierarchy/method 2/lib.rs"
-
-[[bin]]
-name = "product"
-path = "8 - Rust Modules/3 - Cargo tools to Visualize Module Hierarchy/method 1/product.rs"
-
-[[bin]]
-name = "customer"
-path = "8 - Rust Modules/3 - Cargo tools to Visualize Module Hierarchy/method 1/customer.rs"
-
-[[bin]]
-name = "order"
-path = "8 - Rust Modules/3 - Cargo tools to Visualize Module Hierarchy/method 1/order.rs"
-
-[[bin]]
-name = "1 - Program Outputs and comments"
-path = "2 - Basic Programming/1 - Program Outputs and comments.rs"
-
+path = "2_basic_programming/1_program_outputs_and_comments.rs"
