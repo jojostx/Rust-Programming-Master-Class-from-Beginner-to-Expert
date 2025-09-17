@@ -6,5 +6,9 @@ edition = "2024"
 [dependencies]
 
 [[bin]]
-name = "lib"
+name = "comments"
 path = "2_basic_programming/1_program_outputs_and_comments.rs"
+
+[[bin]]
+name = "variables"
+path = "2_basic_programming/2_variables_and_scalar_data_types.rs"
