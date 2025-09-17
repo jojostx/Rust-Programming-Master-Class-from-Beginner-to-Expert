@@ -50,10 +50,10 @@ fn main() {
     println!("\n***************************************************** \n");
 
     // Case 4: The shadowing in case of code segments
-    let mut s = 65;
+    let s = 65;
 
     {
-        s = 60; // after this change s to let s = 60 and will change the output to 65
+        let s = 60; // after this change s to let s = 60 and will change the output to 65
         println!("The value of the variable s inside the inner scope = {}", s);
     }
 

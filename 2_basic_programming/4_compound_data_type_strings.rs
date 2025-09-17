@@ -58,7 +58,7 @@ Length of the string after the trim is {}",
 
     // Number to string
     let number = 6;
-    println!("The value of number in string is {}", number.to_string());
+    println!("The value of number in string is {}", number);
     println!(
         "Is the number really a string {}",
         number.to_string() == "6"
@@ -69,7 +69,7 @@ Length of the string after the trim is {}",
     print!(
         "The value of character in string is {}, 
 Is the character really a string {}",
-        some_char.to_string(),
+        some_char,
         some_char.to_string() == "a"
     );
 
