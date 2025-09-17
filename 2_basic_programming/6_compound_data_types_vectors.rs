@@ -1,66 +1,31 @@
-fn main(){
+fn main() {
+    // vectors are growable arrays
 
+    let mut nums_vec = vec![1, 2, 3, 4, 3, 5];
 
-    // -------------------------------------------------
-    // 			Vectors
-    //			- Declaring vectors 
-    //	 		- Accessing elements
-    //	 		- Printing elements
-    //	 		- Updating elements 
-    //	 		- Initializing with same values
-    //	 		- String and char vectors
-    //	 		- Vector slices
-    //	 		- Common functions 
-    //	 		- Invalid access 
-    // -------------------------------------------------
+    println!("{}", nums_vec[0]);
+    println!("{:?}", nums_vec);
 
+    nums_vec[0] = 100;
+    println!("{}", nums_vec[0]);
 
+    // prefilled vector
+    let mut nums_vec = vec![0; 10];
+    println!("{:?}", nums_vec);
 
+    // updating adding an element to the end
+    nums_vec.push(14);
+    println!("{:?}", nums_vec);
 
-// declaring vectors 
-let mut number_vec:Vec<i32> = vec![4,5,6,8,9,10,11,12,15,16,12,10];  
+    // get the len of the array
+    println!("{}", nums_vec.len());
 
-// Printing a specific element
-println!("{}",number_vec[0]);
+    // get an elem using the get method
+    println!("{:?}", nums_vec.get(2));
 
-// Printing the whole vector 
-println!("{:?}",number_vec);
+    // removing an element
+    println!("{:?}", nums_vec.remove(2));
 
-// Updating a specific element 
-number_vec[4] = 5; 
-println!("{:?}",number_vec);
-
-// Initiallizing vectors with same elements 
-let array_with_same_elements: Vec<i32> = vec![0;10];
-
-// String vectors 
-let mut string_array_1: Vec<&str> = vec!["apple","tomato","grapes"];
-let string_array_2: Vec<&str> = vec!["Unknown";6]; 
-string_array_1[0] = "kamran azam"; 
-
-// Character vectors 
-let char_array: Vec<char> = vec!['a','p','p','l','e']; 
-
-// Get subset of an vector without making a copy but by reference
-let subset_vec = &number_vec[0..3];  // the concept of borrow 
-println!("The subset of values of the array are {:?}",subset_vec); 
-
-// Number of elements in an array 
-println!("Elements in the array are {}", number_vec.len());
-
-// Check if the elements are there or not 
-let check_index = number_vec.get(100); 
-println!("{:?}", check_index);
-
-// Adding elements to the vector using the push 
-number_vec.push(30);
-number_vec.push(40);
-println!("The subset of values of the array are {:?}",number_vec); 
-
-// Removing element from the vector 
-number_vec.remove(5); 
-println!("The array after removing the element at index 5 {:?}",number_vec);
-
-// Checking for an item inside a vector
-println!("The value of 10 exist in the array {}",number_vec.contains(&10)); 
+    // use the contains method
+    println!("{:?}", nums_vec.contains(&2));
 }
