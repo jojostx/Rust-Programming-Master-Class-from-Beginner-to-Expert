@@ -14,5 +14,9 @@ name = "variables"
 path = "2_basic_programming/2_variables_and_scalar_data_types.rs"
 
 [[bin]]
-name = "more-variables"
+name = "more_variables"
 path = "2_basic_programming/3_more_on_variables_shadowing_and_constants.rs"
+
+[[bin]]
+name = "compuond_data_type_strings"
+path = "2_basic_programming/4_compuond_data_type_strings.rs"
