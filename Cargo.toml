@@ -12,3 +12,7 @@ path = "2_basic_programming/1_program_outputs_and_comments.rs"
 [[bin]]
 name = "variables"
 path = "2_basic_programming/2_variables_and_scalar_data_types.rs"
+
+[[bin]]
+name = "more-variables"
+path = "2_basic_programming/3_more_on_variables_shadowing_and_constants.rs"
