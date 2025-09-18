@@ -32,3 +32,19 @@ path = "2_basic_programming/6_compound_data_types_vectors.rs"
 [[bin]]
 name = "functions_and_inputs"
 path = "2_basic_programming/7_functions_and_inputs.rs"
+
+[[bin]]
+name = "ownership_rules_premitive_and_non_premitive_types"
+path = "3_rust_ownership/1_ownership_rules_premitive_and_non_premitive_types.rs"
+
+[[bin]]
+name = "heap_and_stack"
+path = "3_rust_ownership/2_heap_and_stack.rs"
+
+[[bin]]
+name = "onwership_and_feferences_in_functions"
+path = "3_rust_ownership/3_onwership_and_feferences_in_functions.rs"
+
+[[bin]]
+name = "mutable_and_immutable_references"
+path = "3_rust_ownership/4_mutable_and_immutable_references.rs"
