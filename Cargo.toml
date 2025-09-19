@@ -43,7 +43,7 @@ path = "3_rust_ownership/2_heap_and_stack.rs"
 
 [[bin]]
 name = "onwership_and_feferences_in_functions"
-path = "3_rust_ownership/3_onwership_and_feferences_in_functions.rs"
+path = "3_rust_ownership/3_ownership_and_references_in_functions.rs"
 
 [[bin]]
 name = "mutable_and_immutable_references"
