@@ -1,49 +1,41 @@
-// -------------------------------------------
-// 			Stack
-//          	- Stack using vec
-//          	- Application of Stacks (String Reversal)
-// -------------------------------------------
-
 fn new_stack(maxsize: usize) -> Vec<char> {
-    let vec: Vec<char> = Vec::with_capacity(maxsize);
-    vec
+    Vec::with_capacity(maxsize)
+}
+
+fn push(stack: &mut Vec<char>, item: char, maxsize: usize) -> Result<char, &str> {
+    let stack_len: u32 = stack.len() as u32;
+    let maxsize = maxsize as u32;
+    if stack_len >= maxsize || stack_len + 1 > maxsize {
+        return Err("unable to push item to stack");
+    }
+
+    stack.push(item);
+    Ok(item)
 }
 
 fn pop(stack: &mut Vec<char>) -> Option<char> {
-    let poped_val = stack.pop();
-    //     println!("The poped value is {:?}",poped_val);
-    poped_val
+    stack.pop()
 }
 
-fn push(stack: &mut Vec<char>, item: char, maxsize: usize) {
-    if stack.len() == maxsize {
-        //         println!("Can not add more")
-    } else {
-        stack.push(item);
-        //         println!("Stack: {:?}", stack);
-    }
-}
-
-fn size(stack: &Vec<char>) -> usize {
+fn size(stack: &[char]) -> usize {
     stack.len()
 }
 
 fn main() {
     let input_string = String::from("Welcome to rust");
-    let size_stack = input_string.len();
-    let mut stack = new_stack(size_stack);
+    let maxsize = input_string.len();
+    let mut stack = new_stack(maxsize);
+
     let mut rev_string = String::new();
 
-    
-    for i in input_string.chars() {
-        push(&mut stack, i, size_stack);
+    for c in input_string.chars() {
+        let _ = push(&mut stack, c, maxsize);
     }
 
-    
-    for i in 0..size(&stack) {
+    for _ in 0..size(&stack) {
         rev_string.push(pop(&mut stack).unwrap());
     }
-    println!("The input string is {:?}", input_string);
-    println!("The reverse of the string is {:?} ",rev_string);
- 
+
+    println!("{}", input_string);
+    println!("{}", rev_string);
 }
