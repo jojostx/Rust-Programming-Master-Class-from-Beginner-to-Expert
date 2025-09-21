@@ -1,0 +1,90 @@
+[package]
+name = "rust_tutorial"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "comments"
+path = "2_basic_programming/1_program_outputs_and_comments.rs"
+
+[[bin]]
+name = "variables"
+path = "2_basic_programming/2_variables_and_scalar_data_types.rs"
+
+[[bin]]
+name = "more_variables"
+path = "2_basic_programming/3_more_on_variables_shadowing_and_constants.rs"
+
+[[bin]]
+name = "compound_data_type_strings"
+path = "2_basic_programming/4_compound_data_type_strings.rs"
+
+[[bin]]
+name = "compound_data_types_tuples_arrays_vectors"
+path = "2_basic_programming/5_compound_data_types_tuples_arrays_vectors.rs"
+
+[[bin]]
+name = "compound_data_types_vectors"
+path = "2_basic_programming/6_compound_data_types_vectors.rs"
+
+[[bin]]
+name = "functions_and_inputs"
+path = "2_basic_programming/7_functions_and_inputs.rs"
+
+[[bin]]
+name = "ownership_rules_premitive_and_non_premitive_types"
+path = "3_rust_ownership/1_ownership_rules_premitive_and_non_premitive_types.rs"
+
+[[bin]]
+name = "heap_and_stack"
+path = "3_rust_ownership/2_heap_and_stack.rs"
+
+[[bin]]
+name = "onwership_and_feferences_in_functions"
+path = "3_rust_ownership/3_ownership_and_references_in_functions.rs"
+
+[[bin]]
+name = "mutable_and_immutable_references"
+path = "3_rust_ownership/4_mutable_and_immutable_references.rs"
+
+[[bin]]
+name = "derefencing"
+path = "3_rust_ownership/5_dereferencing.rs"
+
+[[bin]]
+name = "1_conditional_if_and_its_varaints"
+path = "4_control_structures/1_conditional_if_and_its_varaints.rs"
+
+[[bin]]
+name = "2_if_let_nested_if_and_the_match"
+path = "4_control_structures/2_if_let_nested_if_and_the_match.rs"
+
+[[bin]]
+name = "3_match_statement"
+path = "4_control_structures/3_match_statement.rs"
+
+[[bin]]
+name = "4_while_and_simple_loops"
+path = "4_control_structures/4_while_and_simple_loops.rs"
+
+[[bin]]
+name = "5_for_loops_and_its_variants"
+path = "4_control_structures/5_for_loops_and_its_variants.rs"
+
+[[bin]]
+name = "6_break_and_continue"
+path = "4_control_structures/6_break_and_continue.rs"
+
+[[bin]]
+name = "1_implementation_stacks_using_rust"
+path = "5_project_stack_implemenation_and_applications/1_implementation_stacks_using_rust.rs"
+
+[[bin]]
+name = "2_string_reversal_using_stacks"
+path = "5_project_stack_implemenation_and_applications/2_string_reversal_using_stacks.rs"
+
+[[bin]]
+name = "3_expression_evaluation_implement_rust_using_stack"
+path = "5_project_stack_implemenation_and_applications/3_expression_evaluation_implement_rust_using_stack.rs"

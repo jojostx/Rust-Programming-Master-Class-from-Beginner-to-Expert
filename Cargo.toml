@@ -76,3 +76,15 @@ path = "4_control_structures/5_for_loops_and_its_variants.rs"
 [[bin]]
 name = "6_break_and_continue"
 path = "4_control_structures/6_break_and_continue.rs"
+
+[[bin]]
+name = "1_implementation_stacks_using_rust"
+path = "5_project_stack_implemenation_and_applications/1_implementation_stacks_using_rust.rs"
+
+[[bin]]
+name = "2_string_reversal_using_stacks"
+path = "5_project_stack_implemenation_and_applications/2_string_reversal_using_stacks.rs"
+
+[[bin]]
+name = "3_expression_evaluation_implement_rust_using_stack"
+path = "5_project_stack_implemenation_and_applications/3_expression_evaluation_implement_rust_using_stack.rs"

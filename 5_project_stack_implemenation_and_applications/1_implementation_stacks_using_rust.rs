@@ -1,26 +1,22 @@
-// -------------------------------------------
-// 			Stack
-//          	- Stack using vec
-// -------------------------------------------
+use std::{io::stdin, process::exit};
 
 fn new_stack(maxsize: usize) -> Vec<u32> {
-    let vec: Vec<u32> = Vec::with_capacity(maxsize);
-    vec
+    Vec::with_capacity(maxsize)
+}
+
+fn push(stack: &mut Vec<u32>, item: u32, maxsize: usize) -> Result<u32, &str> {
+    let stack_len: u32 = stack.len() as u32;
+    let maxsize = maxsize as u32;
+    if stack_len >= maxsize || stack_len + 1 > maxsize {
+        return Err("unable to push item to stack");
+    }
+
+    stack.push(item);
+    Ok(item)
 }
 
 fn pop(stack: &mut Vec<u32>) -> Option<u32> {
-    let poped_val = stack.pop();
-    println!("The poped value is {:?}", poped_val);
-    poped_val
-}
-
-fn push(stack: &mut Vec<u32>, item: u32, maxsize: usize) {
-    if stack.len() == maxsize {
-        println!("Can not add more")
-    } else {
-        stack.push(item);
-        println!("Stack: {:?}", stack);
-    }
+    stack.pop()
 }
 
 fn size(stack: &Vec<u32>) -> usize {
@@ -28,50 +24,52 @@ fn size(stack: &Vec<u32>) -> usize {
 }
 
 fn input() -> u32 {
-    let mut n = String::new();
-    std::io::stdin()
-        .read_line(&mut n)
-        .expect("failed to read input.");
+    let mut num = String::new();
 
-    let n: u32 = n.trim().parse().expect("invalid input");
-    n
+    stdin().read_line(&mut num).expect("unable to read input");
+
+    num.trim().parse::<u32>().expect("unable to read input")
 }
-
 fn main() {
-    println!("let us first create a stack for our use");
-    println!("Please mention the size of the stack ");
-    let size_stack = input();
-    let mut stack = new_stack(size_stack as usize);
+    println!("Let's first create a stack for our use");
+    println!("what is the size of our stack?");
+
+    let maxsize = input() as usize;
+    let mut stack = new_stack(maxsize);
 
     loop {
-        println!("\n\n***** MENU *****\n");
-        println!("1. Push\n2. Pop\n3. Display\n4. Size \n5. Exit");
-        println!("\nEnter your choice: ");
+        println!("\n -- Menu -- \n");
+        println!(" 1. Push \n 2. Pop \n 3. Display Stack \n 4. size \n 5. Exit");
         let choice = input();
+
         match choice {
             1 => {
-                println!("Enter the value to be insert: ");
+                println!("please specify the number to add to the stack");
                 let item = input();
-                push(&mut stack, item, size_stack as usize);
+
+                match push(&mut stack, item, maxsize) {
+                    Ok(n) => print!("item {} has been added to the stack", n),
+                    Err(msg) => println!("{}", msg),
+                }
             }
+            2 => {
+                let n = pop(&mut stack);
 
-            2 => println!("The element which is poped is {:?}", pop(&mut stack)),
-
-            3 => println!("The elements are {:?}", stack),
-
-            4 => println!("The size of the stack is {}", size(&stack)),
-
-            5 => break, // println!("\n Exiting"),
-
-            _ => println!("\nWrong selection!!! Try again!!!"),
-        }
-
-        println!("Do you want to continue 1 = Yes/ 0 = No");
-        let status = input();
-        if status == 1 {
-            continue;
-        } else {
-            break;
+                match n {
+                    Some(n) => println!(
+                        "{} was removed from the stack, and this is the new stack => {:?}",
+                        n, stack
+                    ),
+                    None => println!(
+                        "no item was removed from the stack, and this is the new stack => {:?}",
+                        stack
+                    ),
+                }
+            }
+            3 => println!("{:?}", stack),
+            4 => println!("This is the size of the stack now => {}", size(&stack)),
+            5 => exit(0),
+            _ => println!("incorrect option selected, please choose between 1 to 5"),
         }
     }
 }
