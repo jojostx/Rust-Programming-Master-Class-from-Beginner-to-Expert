@@ -21,10 +21,6 @@ fn pop(stack: &mut Vec<String>) -> Option<String> {
     stack.pop()
 }
 
-fn size(stack: &[String]) -> usize {
-    stack.len()
-}
-
 fn is_operator(ch: char) -> bool {
     for ch_ in ['+', '-', '*', '/', '(', ')'].into_iter() {
         if ch_ == ch {
@@ -34,11 +30,11 @@ fn is_operator(ch: char) -> bool {
 
     false
 }
-fn get_priority(op: &String) -> u8 {
+fn get_priority(op: &str) -> u8 {
     let priority_op: HashMap<&'static str, u8> =
         HashMap::from([("-", 1), ("+", 2), ("*", 3), ("/", 4), ("^", 5)]);
 
-    let priority = priority_op.get(op.as_str()).unwrap_or(&0);
+    let priority = priority_op.get(op).unwrap_or(&0);
 
     *priority
 }
@@ -55,7 +51,7 @@ fn individual_symbols(expr: String) -> Vec<String> {
                 temp.clear();
             }
             tokenized_ops.push(ch.to_string());
-        } else {
+        } else if ch != ' ' {
             temp.push(ch);
         }
     }
@@ -91,16 +87,16 @@ fn build_postfix(tokens: Vec<String>) -> Vec<String> {
                         }
 
                         // push to the stack
-                        push(&mut stack, ch, stack_size);
+                        let _ = push(&mut stack, ch, stack_size);
                     } else {
-                        push(&mut stack, ch, stack_size);
+                        let _ = push(&mut stack, ch, stack_size);
                     }
                 } else {
-                    push(&mut stack, ch, stack_size);
+                    let _ = push(&mut stack, ch, stack_size);
                 }
             }
             "(" => {
-                push(&mut stack, ch, stack_size);
+                let _ = push(&mut stack, ch, stack_size);
             }
             ")" => {
                 while stack.last().unwrap() != "(" {
@@ -120,6 +116,41 @@ fn build_postfix(tokens: Vec<String>) -> Vec<String> {
     postfix_vec
 }
 
+fn evaluate_postfix(post_fix: Vec<String>) -> f32 {
+    let maxsize = post_fix.len();
+    let mut stack = new_stack(maxsize);
+
+    for op in post_fix {
+        match op.as_str() {
+            "*" | "-" | "+" | "^" | "/" => {
+                let op2 = pop(&mut stack).unwrap();
+                let op1 = pop(&mut stack).unwrap();
+                let result = perform_operation(&op1, &op2, &op).to_string();
+                push(&mut stack, result, maxsize).unwrap();
+            }
+            _ => {
+                push(&mut stack, op, maxsize).unwrap();
+            }
+        }
+    }
+
+    pop(&mut stack).unwrap().parse::<f32>().unwrap()
+}
+
+fn perform_operation(op1: &str, op2: &str, op: &str) -> f32 {
+    let op1 = op1.parse::<f32>().unwrap();
+    let op2 = op2.parse::<f32>().unwrap();
+
+    match op as &str {
+        "+" => op1 + op2,
+        "-" => op1 - op2,
+        "*" => op1 * op2,
+        "/" => op1 / op2,
+        "^" => op1.powf(op2),
+        _ => 0.0,
+    }
+}
+
 fn main() {
     let input_string = String::from("(2 + 55) - 36");
     let tokens = individual_symbols(input_string);
@@ -129,4 +160,5 @@ fn main() {
     let postfix = build_postfix(tokens);
 
     println!("{:?}", postfix);
+    println!("{:?}", evaluate_postfix(postfix));
 }
