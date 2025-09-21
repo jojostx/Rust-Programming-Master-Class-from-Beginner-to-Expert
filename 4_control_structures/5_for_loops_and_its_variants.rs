@@ -10,7 +10,15 @@ fn main() {
         println!("The {}th value in the vector is {}", i, val);
     }
 
-    for i in &mut [45, 30, 85, 90, 41, 39].iter_mut() {
+    for i in [45, 30, 85, 90, 41, 39].iter_mut() {
+        // or &mut some_vec
+        *i += 5;
+        println!("{}", i);
+    }
+
+    // is equivalent to
+
+    for i in &mut [45, 30, 85, 90, 41, 39] {
         // or &mut some_vec
         *i += 5;
         println!("{}", i);
