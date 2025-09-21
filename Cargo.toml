@@ -76,23 +76,3 @@ path = "4_control_structures/5_for_loops_and_its_variants.rs"
 [[bin]]
 name = "6_break_and_continue"
 path = "4_control_structures/6_break_and_continue.rs"
-
-[[bin]]
-name = "7_some_examples_of_loops"
-path = "4_control_structures/exercise/7_some_examples_of_loops.rs"
-
-[[bin]]
-name = "8_practice_sum_of_square_difference"
-path = "4_control_structures/exercise/8_practice_sum_of_square_difference.rs"
-
-[[bin]]
-name = "9_practice_sum_of_multiples"
-path = "4_control_structures/exercise/9_practice_sum_of_multiples.rs"
-
-[[bin]]
-name = "10_practice_palindrome"
-path = "4_control_structures/exercise/10_practice_palindrome.rs"
-
-[[bin]]
-name = "11_practice_pathagorian_triplet"
-path = "4_control_structures/exercise/11_practice_pathagorian_triplet.rs"
