@@ -23,23 +23,24 @@ fn size(stack: &[String]) -> usize {
     stack.len()
 }
 
+fn is_operator(ch: char) -> bool {
+    ['+', '-', '*', '/', '(', ')'].contains(&ch)
+}
+
 fn individual_symbols(expr: String) -> Vec<String> {
     let mut tokenized_ops: Vec<String> = vec![];
     let mut temp: Vec<char> = vec![];
 
     for ch in expr.chars() {
-        match ch {
-            '+' | '-' | '*' | '/' | '(' | ')' => {
-                if !temp.is_empty() {
-                    let op = temp.iter().collect::<String>();
-                    tokenized_ops.push(op.trim().to_string());
-                    temp.clear();
-                }
-                tokenized_ops.push(ch.to_string());
+        if is_operator(ch) {
+            if !temp.is_empty() {
+                let op = temp.iter().collect::<String>();
+                tokenized_ops.push(op.trim().to_string());
+                temp.clear();
             }
-            _ => {
-                temp.push(ch);
-            }
+            tokenized_ops.push(ch.to_string());
+        } else {
+            temp.push(ch);
         }
     }
 
