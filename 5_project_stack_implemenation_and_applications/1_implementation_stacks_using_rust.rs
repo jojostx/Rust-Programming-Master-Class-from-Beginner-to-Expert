@@ -19,7 +19,7 @@ fn pop(stack: &mut Vec<u32>) -> Option<u32> {
     stack.pop()
 }
 
-fn size(stack: &Vec<u32>) -> usize {
+fn size(stack: &[u32]) -> usize {
     stack.len()
 }
 
