@@ -84,11 +84,11 @@ impl Numbers {
     }
 }
 
-fn main() {
-    let some_nums = Numbers(32, 16);
-    println!(
-        "The values of hte two fields are {} and {} ",
-        some_nums.0, some_nums.1
-    );
-    println!("The greater of the two numbers is {}", some_nums.lesser());
-}
+// fn main() {
+//     let some_nums = Numbers(32, 16);
+//     println!(
+//         "The values of hte two fields are {} and {} ",
+//         some_nums.0, some_nums.1
+//     );
+//     println!("The greater of the two numbers is {}", some_nums.lesser());
+// }
