@@ -88,3 +88,35 @@ path = "5_project_stack_implemenation_and_applications/2_string_reversal_using_s
 [[bin]]
 name = "3_expression_evaluation_implement_rust_using_stack"
 path = "5_project_stack_implemenation_and_applications/3_expression_evaluation_implement_rust_using_stack.rs"
+
+[[bin]]
+name = "8_hash_maps"
+path = "6_structures,_traits,_generics,_enums/8_hash_maps.rs"
+
+[[bin]]
+name = "6_option_enum"
+path = "6_structures,_traits,_generics,_enums/6_option_enum.rs"
+
+[[bin]]
+name = "3_functions_within_a_trait"
+path = "6_structures,_traits,_generics,_enums/3_functions_within_a_trait.rs"
+
+[[bin]]
+name = "1_structs_basics"
+path = "6_structures,_traits,_generics,_enums/1_structs_basics.rs"
+
+[[bin]]
+name = "2_traits_and_default_implementations"
+path = "6_structures,_traits,_generics,_enums/2_traits_and_default_implementations.rs"
+
+[[bin]]
+name = "4_enums"
+path = "6_structures,_traits,_generics,_enums/4_enums.rs"
+
+[[bin]]
+name = "7_result_enum"
+path = "6_structures,_traits,_generics,_enums/7_result_enum.rs"
+
+[[bin]]
+name = "5_generics"
+path = "6_structures,_traits,_generics,_enums/5_generics.rs"

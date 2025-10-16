@@ -120,3 +120,35 @@ path = "6_structures,_traits,_generics,_enums/7_result_enum.rs"
 [[bin]]
 name = "5_generics"
 path = "6_structures,_traits,_generics,_enums/5_generics.rs"
+
+[[bin]]
+name = "3_eliding_lifetimes"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/3_eliding_lifetimes.rs"
+
+[[bin]]
+name = "2_lifetimes"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/2_lifetimes.rs"
+
+[[bin]]
+name = "4_closures"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/4_closures.rs"
+
+[[bin]]
+name = "8_iterators"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/8_iterators.rs"
+
+[[bin]]
+name = "6_function_types"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/6_function_types.rs"
+
+[[bin]]
+name = "5_closures"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/5_closures.rs"
+
+[[bin]]
+name = "1_lifetimes"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/1_lifetimes.rs"
+
+[[bin]]
+name = "7_iterators"
+path = "7_iterators,_lifetimes,_closures/7_iterators,_lifetimes,_closures/7_iterators.rs"
