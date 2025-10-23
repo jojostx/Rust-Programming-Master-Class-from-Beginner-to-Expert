@@ -177,17 +177,12 @@ path = "8_rust_modules/2_rust_modules/1_rust_modules.rs"
 name = "main"
 path = "8_rust_modules/1_rust_modules/main.rs"
 
-[[bin]]
-name = "file_1"
-path = "8_rust_modules/1_rust_modules/file_1.rs"
-
-[[bin]]
-name = "file_2"
-path = "8_rust_modules/1_rust_modules/file_2.rs"
-
-[[bin]]
-name = "1_rust_modules_lib"
-path = "8_rust_modules/1_rust_modules/lib.rs"
+[workspace]
+members = [
+    "8_rust_modules/1_rust_modules",
+    "8_rust_modules/2_rust_modules",
+    "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy",
+]
 
 [[bin]]
 name = "method_2_lib"

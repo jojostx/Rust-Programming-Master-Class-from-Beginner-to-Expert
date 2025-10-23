@@ -1,0 +1,8 @@
+[package]
+name = "rust_modules_3"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "3_cargo_tools"
+path = "main.rs"

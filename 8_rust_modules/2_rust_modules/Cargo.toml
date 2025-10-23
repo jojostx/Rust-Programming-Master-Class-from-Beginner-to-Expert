@@ -1,0 +1,8 @@
+[package]
+name = "rust_modules_2"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "modules_1"
+path = "main.rs"
