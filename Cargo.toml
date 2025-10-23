@@ -5,6 +5,14 @@ edition = "2024"
 
 [dependencies]
 
+[workspace]
+members = [
+    "8_rust_modules/rust_modules_1",
+    "8_rust_modules/rust_modules_2",
+    "8_rust_modules/rust_modules_4",
+    "8_rust_modules/cargo_tools_to_visualize_module_hierarchy",
+]
+
 [[bin]]
 name = "comments"
 path = "2_basic_programming/1_program_outputs_and_comments.rs"
@@ -176,13 +184,6 @@ path = "8_rust_modules/2_rust_modules/1_rust_modules.rs"
 [[bin]]
 name = "main"
 path = "8_rust_modules/1_rust_modules/main.rs"
-
-[workspace]
-members = [
-    "8_rust_modules/1_rust_modules",
-    "8_rust_modules/2_rust_modules",
-    "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy",
-]
 
 [[bin]]
 name = "method_2_lib"

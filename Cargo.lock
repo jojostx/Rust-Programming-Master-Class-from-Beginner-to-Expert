@@ -15,5 +15,9 @@ name = "rust_modules_3"
 version = "0.1.0"
 
 [[package]]
+name = "rust_modules_4"
+version = "0.1.0"
+
+[[package]]
 name = "rust_tutorial"
 version = "0.1.0"
