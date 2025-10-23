@@ -30,16 +30,8 @@ name = "compound_data_type_strings"
 path = "2_basic_programming/4_compound_data_type_strings.rs"
 
 [[bin]]
-name = "compound_data_types_tuples_arrays_vectors"
-path = "2_basic_programming/5_compound_data_types_tuples_arrays_vectors.rs"
-
-[[bin]]
 name = "compound_data_types_vectors"
 path = "2_basic_programming/6_compound_data_types_vectors.rs"
-
-[[bin]]
-name = "functions_and_inputs"
-path = "2_basic_programming/7_functions_and_inputs.rs"
 
 [[bin]]
 name = "ownership_rules_premitive_and_non_premitive_types"
@@ -50,16 +42,8 @@ name = "heap_and_stack"
 path = "3_rust_ownership/2_heap_and_stack.rs"
 
 [[bin]]
-name = "onwership_and_feferences_in_functions"
-path = "3_rust_ownership/3_ownership_and_references_in_functions.rs"
-
-[[bin]]
 name = "mutable_and_immutable_references"
 path = "3_rust_ownership/4_mutable_and_immutable_references.rs"
-
-[[bin]]
-name = "derefencing"
-path = "3_rust_ownership/5_dereferencing.rs"
 
 [[bin]]
 name = "1_conditional_if_and_its_varaints"
@@ -238,48 +222,12 @@ name = "1_implementation_stacks_using_rust"
 path = "5_project_stack_implemenation_and_applications/1_implementation_stacks_using_rust.rs"
 
 [[bin]]
-name = "2_variables_and_scalar_data_types"
-path = "2_basic_programming/2_variables_and_scalar_data_types.rs"
-
-[[bin]]
-name = "1_program_outputs_and_comments"
-path = "2_basic_programming/1_program_outputs_and_comments.rs"
-
-[[bin]]
-name = "6_compound_data_types_vectors"
-path = "2_basic_programming/6_compound_data_types_vectors.rs"
-
-[[bin]]
-name = "3_more_on_variables_shadowing_and_constants"
-path = "2_basic_programming/3_more_on_variables_shadowing_and_constants.rs"
-
-[[bin]]
 name = "5_compound_data_types_tuples_arrays_vectors"
 path = "2_basic_programming/5_compound_data_types_tuples_arrays_vectors.rs"
 
 [[bin]]
-name = "4_compound_data_type_strings"
-path = "2_basic_programming/4_compound_data_type_strings.rs"
-
-[[bin]]
 name = "7_functions_and_inputs"
 path = "2_basic_programming/7_functions_and_inputs.rs"
-
-[[bin]]
-name = "output-test-bin-2_heap_and_stack"
-path = "target/debug/.fingerprint/rust_tutorial-826b2dec94a53d1c/output-test-bin-2_heap_and_stack.rs"
-
-[[bin]]
-name = "test-bin-2_heap_and_stack"
-path = "target/debug/.fingerprint/rust_tutorial-9549cd8d95ee6aa4/test-bin-2_heap_and_stack.rs"
-
-[[bin]]
-name = "output-bin-2_heap_and_stack"
-path = "target/debug/.fingerprint/rust_tutorial-bcb87541109c68de/output-bin-2_heap_and_stack.rs"
-
-[[bin]]
-name = "bin-2_heap_and_stack"
-path = "target/debug/.fingerprint/rust_tutorial-826ad53cd6905131/bin-2_heap_and_stack.rs"
 
 [[bin]]
 name = "3_ownership_and_references_in_functions"
@@ -288,16 +236,3 @@ path = "3_rust_ownership/3_ownership_and_references_in_functions.rs"
 [[bin]]
 name = "5_dereferencing"
 path = "3_rust_ownership/5_dereferencing.rs"
-
-[[bin]]
-name = "4_mutable_and_immutable_references"
-path = "3_rust_ownership/4_mutable_and_immutable_references.rs"
-
-[[bin]]
-name = "1_ownership_rules_premitive_and_non_premitive_types"
-path = "3_rust_ownership/1_ownership_rules_premitive_and_non_premitive_types.rs"
-
-[[bin]]
-name = "2_heap_and_stack"
-path = "3_rust_ownership/2_heap_and_stack.rs"
-
