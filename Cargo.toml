@@ -239,36 +239,40 @@ path = "3_rust_ownership/5_dereferencing.rs"
 
 [[bin]]
 name = "1_basics_of_smart_pointers"
-path = "3_rust_ownership/1_basics_of_smart_pointers.rs"
+path = "9_smart_pointers_in_rust/1_basics_of_smart_pointers.rs"
 
 [[bin]]
 name = "2_box_pointers_and_when_they_are_useful"
-path = "3_rust_ownership/2_box_pointers_and_when_they_are_useful.rs"
+path = "9_smart_pointers_in_rust/2_box_pointers_and_when_they_are_useful.rs"
 
 [[bin]]
 name = "3_refining_cons_list_and_custom_smart_pointer"
-path = "3_rust_ownership/3_refining_cons_list_and_custom_smart_pointer.rs"
+path = "9_smart_pointers_in_rust/3_refining_cons_list_and_custom_smart_pointer.rs"
 
 [[bin]]
 name = "4_generics_and_deref_coercion_in_smart_pointers"
-path = "3_rust_ownership/4_generics_and_deref_coercion_in_smart_pointers.rs"
+path = "9_smart_pointers_in_rust/4_generics_and_deref_coercion_in_smart_pointers.rs"
 
 [[bin]]
 name = "5_rc_smart_pointer"
-path = "3_rust_ownership/5_rc_smart_pointer.rs"
+path = "9_smart_pointers_in_rust/5_rc_smart_pointer.rs"
+
+[[bin]]
+name = "6_refcell_smart_pointer"
+path = "9_smart_pointers_in_rust/6_refcell_smart_pointer.rs"
 
 [[bin]]
 name = "7_implementing_singly_link_list_from_scratch"
-path = "3_rust_ownership/7_implementing_singly_link_list_from_scratch.rs"
+path = "9_smart_pointers_in_rust/7_implementing_singly_link_list_from_scratch.rs"
  
 [[bin]]
 name = "8_implementing_singly_link_list_from_scratch"
-path = "3_rust_ownership/8_implementing_singly_link_list_from_scratch.rs"
+path = "9_smart_pointers_in_rust/8_implementing_singly_link_list_from_scratch.rs"
 
 [[bin]]
 name = "9_10_doubly_link_list"
-path = "3_rust_ownership/9_10_doubly_link_list.rs"
+path = "9_smart_pointers_in_rust/9_10_doubly_link_list.rs"
 
 [[bin]]
 name = "11_reference_cycles_leaking_memory"
-path = "3_rust_ownership/11_reference_cycles_leaking_memory.rs"
+path = "9_smart_pointers_in_rust/11_reference_cycles_leaking_memory.rs"

@@ -5,6 +5,14 @@ edition = "2024"
 
 [dependencies]
 
+[workspace]
+members = [
+    "8_rust_modules/rust_modules_1",
+    "8_rust_modules/rust_modules_2",
+    "8_rust_modules/rust_modules_4",
+    "8_rust_modules/cargo_tools_to_visualize_module_hierarchy",
+]
+
 [[bin]]
 name = "comments"
 path = "2_basic_programming/1_program_outputs_and_comments.rs"
@@ -22,16 +30,8 @@ name = "compound_data_type_strings"
 path = "2_basic_programming/4_compound_data_type_strings.rs"
 
 [[bin]]
-name = "compound_data_types_tuples_arrays_vectors"
-path = "2_basic_programming/5_compound_data_types_tuples_arrays_vectors.rs"
-
-[[bin]]
 name = "compound_data_types_vectors"
 path = "2_basic_programming/6_compound_data_types_vectors.rs"
-
-[[bin]]
-name = "functions_and_inputs"
-path = "2_basic_programming/7_functions_and_inputs.rs"
 
 [[bin]]
 name = "ownership_rules_premitive_and_non_premitive_types"
@@ -42,16 +42,8 @@ name = "heap_and_stack"
 path = "3_rust_ownership/2_heap_and_stack.rs"
 
 [[bin]]
-name = "onwership_and_feferences_in_functions"
-path = "3_rust_ownership/3_ownership_and_references_in_functions.rs"
-
-[[bin]]
 name = "mutable_and_immutable_references"
 path = "3_rust_ownership/4_mutable_and_immutable_references.rs"
-
-[[bin]]
-name = "derefencing"
-path = "3_rust_ownership/5_dereferencing.rs"
 
 [[bin]]
 name = "1_conditional_if_and_its_varaints"
@@ -76,10 +68,6 @@ path = "4_control_structures/5_for_loops_and_its_variants.rs"
 [[bin]]
 name = "6_break_and_continue"
 path = "4_control_structures/6_break_and_continue.rs"
-
-[[bin]]
-name = "1_implementation_stacks_using_rust"
-path = "5_project_stack_implemenation_and_applications/1_implementation_stacks_using_rust.rs"
 
 [[bin]]
 name = "2_string_reversal_using_stacks"
@@ -126,10 +114,6 @@ name = "3_eliding_lifetimes"
 path = "7_iterators_lifetimes_closures/7_iterators_lifetimes_closures/3_eliding_lifetimes.rs"
 
 [[bin]]
-name = "2_lifetimes"
-path = "7_iterators_lifetimes_closures/7_iterators_lifetimes_closures/2_lifetimes.rs"
-
-[[bin]]
 name = "4_closures"
 path = "7_iterators_lifetimes_closures/7_iterators_lifetimes_closures/4_closures.rs"
 
@@ -152,3 +136,139 @@ path = "7_iterators_lifetimes_closures/7_iterators_lifetimes_closures/1_lifetime
 [[bin]]
 name = "7_iterators"
 path = "7_iterators_lifetimes_closures/7_iterators_lifetimes_closures/7_iterators.rs"
+
+[[bin]]
+name = "4_re_exporting_using_pub_use"
+path = "8_rust_modules/4_rust_modules/4_re_exporting_using_pub_use.rs"
+
+[[bin]]
+name = "6_publishing_a_crate_on_crates_io"
+path = "8_rust_modules/4_rust_modules/6_publishing_a_crate_on_crates_io.rs"
+
+[[bin]]
+name = "5_using_external_crates"
+path = "8_rust_modules/4_rust_modules/5_using_external_crates.rs"
+
+[[bin]]
+name = "2_rust_modules_file_1"
+path = "8_rust_modules/2_rust_modules/file_1.rs"
+
+[[bin]]
+name = "2_rust_modules_file_2"
+path = "8_rust_modules/2_rust_modules/file_2.rs"
+
+[[bin]]
+name = "file_3"
+path = "8_rust_modules/2_rust_modules/file_3.rs"
+
+[[bin]]
+name = "1_rust_modules"
+path = "8_rust_modules/2_rust_modules/1_rust_modules.rs"
+
+[[bin]]
+name = "main"
+path = "8_rust_modules/1_rust_modules/main.rs"
+
+[[bin]]
+name = "method_2_lib"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_2/method_2/lib.rs"
+
+[[bin]]
+name = "method_2_customer_mod"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_2/customer/mod.rs"
+
+[[bin]]
+name = "method_2_order_mod"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_2/order/mod.rs"
+
+[[bin]]
+name = "method_2_category"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_2/product/category.rs"
+
+[[bin]]
+name = "method_2_product_mod"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_2/product/mod.rs"
+
+[[bin]]
+name = "method_1_category"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_1/product/category.rs"
+
+[[bin]]
+name = "product_method_1"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_1/method_1/product.rs"
+
+[[bin]]
+name = "customer_method_1"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_1/method_1/customer.rs"
+
+[[bin]]
+name = "lib_method_1"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_1/method_1/lib.rs"
+
+[[bin]]
+name = "rust_modules_order"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/method_1/method_1/order.rs"
+
+[[bin]]
+name = "rust_modules_commands"
+path = "8_rust_modules/3_cargo_tools_to_visualize_module_hierarchy/3_cargo_tools_to_visualize_module_hierarchy/commands.rs"
+
+[[bin]]
+name = "2_lifetimes"
+path = "7_iterators_lifetimes_closures/7_iterators,_lifetimes,_closures/2_lifetimes.rs"
+
+[[bin]]
+name = "1_implementation_stacks_using_rust"
+path = "5_project_stack_implemenation_and_applications/1_implementation_stacks_using_rust.rs"
+
+[[bin]]
+name = "5_compound_data_types_tuples_arrays_vectors"
+path = "2_basic_programming/5_compound_data_types_tuples_arrays_vectors.rs"
+
+[[bin]]
+name = "7_functions_and_inputs"
+path = "2_basic_programming/7_functions_and_inputs.rs"
+
+[[bin]]
+name = "3_ownership_and_references_in_functions"
+path = "3_rust_ownership/3_ownership_and_references_in_functions.rs"
+
+[[bin]]
+name = "5_dereferencing"
+path = "3_rust_ownership/5_dereferencing.rs"
+
+[[bin]]
+name = "1_basics_of_smart_pointers"
+path = "3_rust_ownership/1_basics_of_smart_pointers.rs"
+
+[[bin]]
+name = "2_box_pointers_and_when_they_are_useful"
+path = "3_rust_ownership/2_box_pointers_and_when_they_are_useful.rs"
+
+[[bin]]
+name = "3_refining_cons_list_and_custom_smart_pointer"
+path = "3_rust_ownership/3_refining_cons_list_and_custom_smart_pointer.rs"
+
+[[bin]]
+name = "4_generics_and_deref_coercion_in_smart_pointers"
+path = "3_rust_ownership/4_generics_and_deref_coercion_in_smart_pointers.rs"
+
+[[bin]]
+name = "5_rc_smart_pointer"
+path = "3_rust_ownership/5_rc_smart_pointer.rs"
+
+[[bin]]
+name = "7_implementing_singly_link_list_from_scratch"
+path = "3_rust_ownership/7_implementing_singly_link_list_from_scratch.rs"
+ 
+[[bin]]
+name = "8_implementing_singly_link_list_from_scratch"
+path = "3_rust_ownership/8_implementing_singly_link_list_from_scratch.rs"
+
+[[bin]]
+name = "9_10_doubly_link_list"
+path = "3_rust_ownership/9_10_doubly_link_list.rs"
+
+[[bin]]
+name = "11_reference_cycles_leaking_memory"
+path = "3_rust_ownership/11_reference_cycles_leaking_memory.rs"
