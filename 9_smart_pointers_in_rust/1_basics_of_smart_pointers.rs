@@ -26,4 +26,7 @@ fn main() {
 
     let x = point; //  x is a variable that holds the box smart pointer
     println!("{:?}", x.as_ref());
+
+    let x = *x; // x is being dereferenced with the * operator to return the tuple contained within
+    println!("{:?}", x);
 }
