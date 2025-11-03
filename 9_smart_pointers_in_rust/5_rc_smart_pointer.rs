@@ -17,4 +17,16 @@ fn main() {
     let c = Rc::new(Cons(3, Rc::clone(&a)));
 
     print!("values a, b, c: {:?}, {:?}, {:?}", a, b, c);
+
+    make_rc();
+}
+
+fn make_rc() -> Rc<String> {
+    let s1 = Rc::new(String::new());
+    println!("count when pointer is created {}", Rc::strong_count(&s1));
+
+    let s2 = s1.clone();
+    println!("count after clone {}", Rc::strong_count(&s1));
+
+    s2
 }
